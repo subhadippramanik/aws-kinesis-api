@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN" shutdownHook="disable"
+               monitorInterval="30" packages="com.siemens.bt">
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d [%t] %-5p %c.%M - %m%n"/>
+        </Console>
+    </Appenders>
+    <Loggers>
+        <Logger name="com.siemens.bt" level="error"
+                additivity="false">
+            <AppenderRef ref="Console"/>
+        </Logger>
+        <Root level="debug">
+            <AppenderRef ref="Console"/>
+        </Root>
+    </Loggers>
+</Configuration>

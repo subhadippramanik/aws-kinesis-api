@@ -1,0 +1,13 @@
+spring:
+  profiles:
+    active: default
+
+logging:
+  level:
+    root: ERROR
+    com.siemens.bt: INFO
+    
+#aws:
+#  accessKeyId: AKIAJWMYWOKDOLRN5XHA
+#  secretKey: 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
+ 
